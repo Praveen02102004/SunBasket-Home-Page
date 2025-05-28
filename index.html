@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunBasket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .button:hover{
+        background-color: rgb(244, 201, 102);
+      }
+      .images{
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        animation: changeBg 20s infinite;  
+        transition: none;
+        
+      }
+      @keyframes changeBg {
+        0%{
+          background-image:url(market-carousel-snacks-2048x630.jpg);
+        }
+        50%{
+          background-image:url(market-carousel-lunch-1536x475.jpg) ;
+        }
+        100%{
+          background-image:url(market-carousel-breakfast-2048x635.jpg);
+        }
+        
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+        'sm': '567px',
+        // => @media (min-width: 640px) { ... }
+
+        'md': '768px',
+        // => @media (min-width: 768px) { ... }
+
+        'lg': '1024px',
+        // => @media (min-width: 1024px) { ... }
+
+        'xl': '1280px',
+        // => @media (min-width: 1280px) { ... }
+
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
+      },
+            extend: {
+              screens: {
+                  'exe': {min:'767px',max:'878px'},
+                  // => @media (min-width: 992px) { ... }
+                  'xs': {min:'320px',max:'393px'},
+                  // => @media (min-width: 992px) { ... }
+                  'exe1': {min:'763px',max:'770px'},
+                  // => @media (min-width: 992px) { ... }
+                  'exe2': {min:'567px',max:'766px'},
+                  // => @media (min-width: 992px) { ... }
+                  'exe3': {min:'0px',max:'1024px'},
+                  // => @media (min-width: 992px) { ... }
+                },
+                },
+                
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        
+      </script>
+</head>
+<body>
+    <section class="max-w-[100%] mx-auto bg-[#ffe849] text-center md:sticky md:top-[0] z-[10]" >
+    <header class="max-w-[1170px] py-[10px] mx-auto text-[19px]  grid sm:grid-cols-[57%_auto] grid sm:grid-cols-2  gap-[15px] ">
+        <div class="sm:place-self-end ">
+        <h3 class="pb-[5px]">$90 off across 4 boxes + free shipping* </h3>
+         </div>
+         <div class="sm:place-self-start">
+            <button class="rounded-[40px] bg-[white] min-w-[150px] min-h-[35px] border-[2px] border-black "> Activate offer </button>
+         </div>
+    </header>
+    </section  >
+    <!-- logo -->
+     <section class="max-w-[100%] mx-auto text-center py-[12px] bg-[white] text-[17px] border-b-black border-b-[1px] md:sticky md:top-[55px] z-[9]">
+        <div class="max-w-[1290px]  mx-auto grid sm:grid-cols-[auto_auto_auto] grid grid-cols-1  ">
+            <div class="place-self-start py-[10px] mx-auto">
+            <div class="grid grid-cols-3 gap-[20px]">
+                <div><a href="" class="hover:underline">Menu</a></div>
+                <div><a href="" class="hover:underline">How It Works</a></div>
+                <div><a href="" class="hover:underline"> Values</a></div>
+            </div>
+        </div>
+            <div class="lg:min-w-[200px] min-w-[155px] place-self-center mx-auto">
+                <img src="https://media.sunbasket.com/library/img/sunbasket-logo.svg">
+            </div>
+            
+            <!-- button -->
+            <div class=" mx-auto grid sm:grid-cols-[auto_auto] grid grid-cols-1 py-[10px] flex  mx-auto self-center gap-[5px]">
+                <button class="rounded-[40px] bg-[white] min-w-[100.24px] max-w-[77.24px]  min-h-[35px] max-h-[35px] border-[1px] border-black  sm:place-self-end" > Sign in</button>
+                <button class="rounded-[40px] bg-[white] min-w-[107.78px] max-w-[107.78px] min-h-[35px] max-h-[35px] border-[1px] border-black sm:place-self-start" style="background-color: #ffe849;"> Get started </button>
+            </div>
+
+        </div>
+     </section>
+
+
+     <!-- big background image -->
+      <section class="overflow-hidden">
+        <div class="max-w-[100%]  relative  text-black scale-[1.1] mx-auto text-center w-full bg-cover xl:bg-[url('hands-lemon-lg@2x.jpg')] bg-[rgb(247,244,240)]" >
+            <div class="w-[100%] h-[75vh] mx-auto">
+                <div class=" h-[75vh] absolute left-[30%] right-[30%]  flex text-center " style="display: grid; place-items: center">
+                    <h1 class="font-bold md:text-[60px] text-[23px] exe:text-[40px] xs:text-[20px] xs:pb-[255px] pb-[20px]" style="font-family: Zangezi, Georgia, serif;">Your Kind of <br> Healthy</h1>
+                    <p class="text-[20px] -[20px] absolute md:top-[46%]  exe:top-[35%]">Delicious meals made with clean ingredients<br> and organic fresh produce, delivered to your<br> door and ready in minutes.</p>
+                    
+                    <button class="rounded-[40px] text-[20px] bg-[white] min-w-[210.78px] max-w-[107.78px] min-h-[55px] max-h-[35px] exe2:mb-[10px] border-[1px] border-black md:mb-[100px] sm:mb-[120px] exe1:mb-[10px]" style="background-color: #ffe849;"> Get started </button>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- small div -->
+
+      <section>
+        <div class="max-w-[100%] mx-auto">
+          <div class="max-w-[1170px] mx-auto px-[50px] py-[13px]">
+            <div class="grid sm:grid-cols-3 grid grid-cols-1 text-center">
+              <div class="py-[13px]">
+                <h2 class="text-[25px]" style="font-family: Zangezi, Georgia, serif; font-weight: 400;">Rated a Top 10 Meal Kit</h2>
+                <p  class="text-[18px]" style=" font-style: italic">USA Today Reader's Choice</p>
+              </div>
+              <div class="py-[13px]">
+                <h2 class="text-[25px]" style="font-family: Zangezi, Georgia, serif; font-weight: 400;">#1 Meal Kit for Healthy Eating</h2>
+                <p  class="text-[18px]" style=" font-style: italic">Healthline</p>
+              </div>
+              <div class="py-[13px]">
+                <h2 class="text-[25px]" style="font-family: Zangezi, Georgia, serif; font-weight: 400;">Best for Variety!</h2>
+                <p  class="text-[18px]" style=" font-style: italic">Food Network</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+    <!-- how it works -->
+
+    <section class="bg-[rgb(247,244,240)] pb-[70px] pt-[20px]">
+      <div class="max-w-[100%] mx-auto py-[20px] relative">
+        <div class="max-w-[1170px] mx-auto px-[15px] text-white py-[10px]">
+          <h2 class="sm:text-[50px]  text-[30px] font-bold text-center">How it works?</h2>
+        </div>
+        <div class="max-w-[1280px] mx-auto px-[50px] py-[50px]">
+          <div class="grid md:grid-cols-4 grid sm:grid-cols-2 grid grid-cols-1 text-center gap-[100px] px-[20px]">
+            <div>
+              <figure class="mb-[20px] ">
+                <img class="rounded-[50%] "  src="How-it-Works_Choose-Meals-and-Extras_V5_Square_Web-1-380x380.jpg">
+              </figure>
+              <h3 class="text-[20px]" style=" font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Choose your meals and extras</h3>
+            </div>
+            <div>
+              <figure class="mb-[20px] ">
+                <img class="rounded-[50%] "  src="How-it-Works_We-Deliver-Fresh_Square_Web-380x380.jpg">
+              </figure>
+              <h3 class="text-[20px]" style=" font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">We deliver fresh each week</h3>
+            </div>
+            <div>
+              <figure class="mb-[20px] ">
+                <img class="rounded-[50%] "  src="download.jpg">
+              </figure>
+              <h3 class="text-[20px]" style=" font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Meals ready in minutes</h3>
+            </div>
+            <div>
+              <figure class="mb-[20px] ">
+                <img class="rounded-[50%] "  src="How-it-Works_Skip-or-Cancel-any-Time__Square_Web-380x380.jpg">
+              </figure>
+              <h3 class="text-[20px]" style=" font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Skip or cancel anytime</h3>
+            </div>
+          </div>
+          <div class="mx-auto text-center max-w-[200px] mx-auto mb-[-100px] mt-[25px] bg-[#ffe849] rounded-[40.5px] button">
+            <button class="rounded-[40px] font-bold min-w-[200.78px] max-w-[150.78px] min-h-[50px] max-h-[35px] border-[1px] border-black " > Order now</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 3 col div -->
+
+    <section>
+      <div class="max-w-[100%]  mx-auto py-[30px] ">
+        <div class="max-w-[1280px]   mx-auto px-[50px] py-[10px]">
+          
+          <div class=" text-center grid md:grid-cols-3  gap-[100px] px-[78px]">
+            <div class=" gap-[30px]">
+              <figure class="mb-[20px] grid justify-self-center px-[20px]">
+                <img class="" src="rtb-chopping-3.jpg">
+              </figure>
+              <div>
+              <h3 class="text-[20px] " style=" font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Easy & Convenient</h3>
+              <p class="text-[20px]">Quick recipes designed for busy people, delivered to your door</p>
+            </div>
+            </div>
+            <div class=" gap-[30px] md:mt-[10%]">
+              <figure class="mb-[20px] grid justify-self-center px-[20px]">
+                <img class=" "  src="usda-organic-seal.png">
+              </figure>
+              <div>
+              <h3 class="text-[20px]" style=" font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">The Best Quality</h3>
+              <p class="text-[20px]">Enjoy organic fresh produce and clean ingredients. Proud certified organic handler.</p>
+            </div>
+            </div>
+            <div class="gap-[30px]">
+              <figure class="mb-[20px] grid justify-self-center px-[20px]">
+                <img class=""  src="rtb-timer-3.jpg">
+              </figure>
+              <div>
+              <h3 class="text-[20px]" style=" font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Meal Planning Made Easy</h3>
+              <p class="text-[20px]">Put meal planning on autopilot to eat well all week</p>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Choose easy or easier div -->
+
+    <section>
+      <div class="max-w-[100%] mx-auto py-[30px]">
+        <div class="max-w-[1280px] mx-auto px-[20px] py-[20px] text-center">
+          <div>
+            <h1 class="text-5xl" style="font-weight: 400; font-family: Zangezi, Georgia, serif; font-style: normal;line-height: 1;">Choose Easy—or Easier</h1>
+            <p class="py-[10px] text-[20px]" style="font-family: Inter, Helvetica Neue, Helvetica, Arial, sans-serif;font-weight: 400;">Meal Kits for when you want to get hands-on, Fresh & Ready meals when you don’t. Choose one style or mix and match.</p>
+          </div>
+          <div>
+            <div class="hidden lg:block px-[10px]">
+            <figure class="py-[15px] md:min-h-[600px] bg-cover bg-center lg:bg-[url('kit-options-1536x773.jpg')] hidden lg:block ">
+               <div class="absolute md:left-[1.5%] z-[2]  lg:pl-[12%] pr-[55%] text-left block ">
+               <h2 class="text-[25px]" style="font-family: Zangezi, Georgia, serif;">Pre-Made Meals</h2>
+              <p class="" style="font-weight: 400;font-family: Inter, Helvetica Neue, Helvetica, Arial, sans-serif; line-height: 1.5; font-size: 18px;">Delivered fresh and ready to heat -- the <br>quickest way to a healthy dinner or lunch</p>
+              </div> 
+              
+            </figure>
+            <div class="absolute md:right-[1.5%] mt-[-125px]  z-[3] md:py-[10px] lg:pr-[12%] pl-[59%] text-right block ">
+              <h2 class="text-[25px]" style="font-family: Zangezi, Georgia, serif;">Meal Kits</h2>
+             <p class="" style="font-weight: 400;font-family: Inter, Helvetica Neue, Helvetica, Arial, sans-serif; line-height: 1.5; font-size: 18px;">Cook with easy-to-follow directions, featuring <br> the best seasonal ingredients</p>
+             </div> 
+          </div>
+            <div class="max-w-[90%] mx-auto pl-[10px]">
+            <div class="grid grid-cols-2 gap-[10px] block lg:hidden mx-auto text-center">
+               <div class="text-left">
+                <img src="kits-option-304x380.jpg" alt="">
+                <p class="pt-[10px]">Ready in 30 minutes or less</p>
+                <h2 class="text-[25px]" style="font-family: Zangezi, Georgia, serif;">Meals Kits</h2>
+                <p style="font-weight: 400;font-family: Inter, Helvetica Neue, Helvetica, Arial, sans-serif; line-height: 1.5; font-size: 17px;">Cook with easy-to-follow directions, <br>featuring the best seasonal ingredients</p>
+              </div>
+              <div class="text-left">
+                <img src="fr-option-304x380.jpg" alt="">
+                <div>
+                <p class="pt-[10px]">Ready in less than 5 minutes or less</p>
+                <h2 class="text-[25px]" style="font-family: Zangezi, Georgia, serif;">Pre-Made Meals</h2>
+                <p style="font-weight: 400;font-family: Inter, Helvetica Neue, Helvetica, Arial, sans-serif; line-height: 1.5; font-size: 17px;">Delivered fresh and ready to heat -- the <br>quickest way to a healthy dinner or lunch</p>
+              </div>
+              </div>
+            </div>
+          </div>
+            
+            
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- meal plan section -->
+     <section>
+      <div class="max-w-[100%] pt-[50px] bg-center bg-[rgb(247,244,240)]">
+        <div class="max-w-[1280px] mx-auto px-[50px] ">
+          <div class="grid lg:grid-cols-[30%_25%_25%_20%] grid grid-cols-1 mt-[30px] exe3:text-center">
+            <!-- col 1 -->
+            <div class=" text-left lg:order-1 exe3:mx-auto exe3:text-center exe3:order-1">
+              <h3 class="pb-[5px]" style="font-size: 20px; margin-bottom: 5px; font-weight: 400;">Customize Your Menu</h3>
+              <h1 class="text-4xl pb-[30px] " style="font-family: Zangezi, Georgia, serif; font-weight: 400;" class="">Meal Delivery for<br> Any Lifestyle</h1>
+              <p class="py-[10px] pb-[20px] text-[20px]">Choose a home meal delivery plan for your taste, or mix and <br>match any of our weekly recipes</p>
+              <div class=" text-center  max-w-[230.78px] max-h-[60px]  rounded-[40.5px] exe3:mx-auto">
+                <button class="rounded-[40px] font-bold min-w-[230.78px] max-w-[150.78px] min-h-[50px] max-h-[35px] border-[1px] border-black " style="background-color: #ffe849;" > Find Your meal plan</button>
+              </div>
+            </div>
+
+            <!-- col 2 -->
+
+            <div class=" lg:order-2 exe3:mx-auto exe3:pt-[20px] exe3:order-3">
+              <ol class="pl-[70px] text-[20px]">
+                <li class="hover:underline py-[3px]"> <span  style="color: #ad8026; font-weight: 900;">></span> Paleo</li>
+                <li class="hover:underline py-[3px]"> <span  style="color: #ad8026; font-weight: 900;">></span> Vegetarian</li>
+                <li class="hover:underline py-[3px]"> <span  style="color: #ad8026; font-weight: 900;">></span> Gluten-Free</li>
+                <li class="hover:underline py-[3px]"> <span  style="color: #ad8026; font-weight: 900;">></span> Carb-Conscious</li>
+                <li class="hover:underline py-[3px]"> <span  style="color: #ad8026; font-weight: 900;">></span> Keto-Friendly</li>
+                <li class="hover:underline py-[3px]"> <span  style="color: #ad8026; font-weight: 900;">></span> Mediterranean</li>
+                <li class="hover:underline py-[3px]"> <span  style="color: #ad8026; font-weight: 900;">></span> Diabetes-Friendly</li>
+                <li class="hover:underline py-[3px]"> <span  style="color: #ad8026; font-weight: 900;">></span> Pescatarian</li>
+                <li class="hover:underline py-[3px]"> <span  style="color: #ad8026; font-weight: 900;">></span> Fresh & Ready</li>
+              </ol>
+            </div>
+
+            <!-- col 3 -->
+
+            <div class="px-[10px] pl-[5px] lg:order-3 exe3:mx-auto exe3:pt-[20px] exe3:order-2">
+              <figure>
+                <img class="min-h-[350px] min-w-[210px] max-h-[250px] " src="persona-jenn-304x380.jpg" alt="">
+              </figure>
+            </div>
+            <!-- col 4 -->
+            <div class=" lg:order-4 exe3:mx-auto exe3:pt-[20px] exe3:order-4">
+              <figure class="lg:mt-[-80px] lg:mb-[0px] exe3:flex exe3:gap-[20px] exe3:ml-[-20p]">
+                <img class=" pt-[5px] max-h-[270px] overflow-hidden " src="persona-rick-304x380.jpg" alt="">
+                <img class=" pb-[px] max-h-[270px]  overflow-hidden" src="persona-hannah-304x380.jpg" alt="">
+              </figure>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+     </section>
+
+
+     <!-- Menu div -->
+      <section class="max-w-[100%] py-[30px]">
+        <div class="max-w-[1170px] mx-auto px-[60px] py-[20px] text-center">
+          <div>
+            <h1 class="text-5xl" style="font-weight: 400; font-family: Zangezi, Georgia, serif; font-style: normal;line-height: 1;">Our Menu: Full of Organic Fresh Produce</h1>
+            
+          <div class="grid sm:grid-cols-3 grid-cols-1 grid  gap-[30px] text-left py-[10px]">
+            <!-- col 1 -->
+            <div class="py-[30px]">
+                <figure class="mb-[10px]">
+                  <img src="e601c119-975b-48ac-ad49-43c6c9a46ca5@600.webp" alt="">
+                </figure>
+                <h2 class="text-[18px]" style="font-weight: 400; font-family: Zangezi, Georgia, serif;">Meal Kit Speedy</h2>
+                <h1 class="text-2xl">
+                    Southern French–style pork with garlicky pecan aillade and braised kale
+                </h1>
+                <small class="" style="color: #767676; text-transform: capitalize; overflow: hidden; max-height: 2.6em; text-overflow: ellipsis;font-style: italic; display: -webkit-box;">
+                  carb-conscious, dairy-free, diabetes-friendly, gluten free friendly, mediterranean, no added sugar, protein plus, soy-free
+                690 Calories/Serving, 20 Minutes
+                Inspired by the cuisine of the Languedoc region in southern France, we pair pork chops with a garlicky aillade and a side of braised kale with raisins.
+                </small>
+                <p class="mb-[3px] text-[18px]">Serves 2 </p>
+            </div>
+            <!-- col 2 -->
+           <div class="py-[30px]">
+                <figure class="mb-[10px]">
+                  <img src="5e2f73af-9fa5-4f63-9abc-5236e23c811a@600.webp" alt="">
+                </figure>
+                <h2 class="text-[18px]" style="font-weight: 400; font-family: Zangezi, Georgia, serif;">Meal Kit Speedy</h2>
+                <h1 class="text-2xl">
+                    Southern French–style pork with garlicky pecan aillade and braised kale
+                </h1>
+                <small class="" style="color: #767676; text-transform: capitalize; overflow: hidden; max-height: 2.6em; text-overflow: ellipsis;font-style: italic; display: -webkit-box;">
+                  carb-conscious, dairy-free, diabetes-friendly, gluten free friendly, mediterranean, no added sugar, protein plus, soy-free
+                690 Calories/Serving, 20 Minutes
+                Inspired by the cuisine of the Languedoc region in southern France, we pair pork chops with a garlicky aillade and a side of braised kale with raisins.
+                </small>
+                <p class="mb-[3px] text-[18px]">Serves 2 </p>
+            </div>
+            <!-- col 3 -->
+            
+            <div class="py-[30px]">
+                <figure class="mb-[10px]">
+                  <img src="2d3ea37b-aba3-40ad-9533-94a8f101cf32@600.webp" alt="">
+                </figure>
+                <h2 class="text-[18px]" style="font-weight: 400; font-family: Zangezi, Georgia, serif;">Meal Kit Speedy</h2>
+                <h1 class="text-2xl">
+                    Moroccan-spiced chicken skewers with chickpea and tomato salad
+                </h1>
+                <small class="" style="color: #767676; text-transform: capitalize; overflow: hidden; max-height: 2.6em; text-overflow: ellipsis;font-style: italic; display: -webkit-box;">
+                  carb-conscious, dairy-free, diabetes-friendly, gluten free friendly, lean & clean, less calories, mediterranean, no added sugar, protein plus, soy-free, spicy
+                  510 Calories/Serving, 25 Minutes
+                </small>
+                <p class="mb-[3px] text-[18px]">Serves 2 </p>
+            </div>
+
+          </div>
+          <div class=" text-center  mx-auto  max-w-[230.78px] max-h-[60px] text-center mr-[45%]">
+                <button class="rounded-[40px] font-bold min-w-[150%] max-w-[170.78px] min-h-[50px] max-h-[35px] border-[1px] border-black " style="background-color: #ffe849;" > Explore the Menu</button>
+              </div>
+        </div>
+      </section>
+
+      <!-- Hungry yet div -->
+
+      <section >
+        <div class="max-w-[100%] py-[50px] images min-h-[35vh]">
+           <div class="w-[100%] h-[52vh] px-[17%] pt-[20px] hidden md:block ">
+                <div class=" h-[50vh]" >
+                    <h1 class="font-bold  text-[40px]  pb-[20px]" style="font-family: Zangezi, Georgia, serif;">Let’s do lunch.<br>And breakfast.</h1>
+                    <p class="text-[20px] ">Heck, snacks too. Add Market items to your <br>basket for feel-good deliciousness, any time of<br> day.</p>
+                    
+                    <button class="rounded-[40px] font-bold bg-[white] min-w-[190.78px]  min-h-[50px] max-h-[35px] border-[1px] border-black mt-[30px] " style="background-color: #ffe849;"> Check it out </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-[100%] h-[40vh]  pt-[20px] block md:hidden">
+                <div class=" px-[10px]  mx-auto text-center"  >
+                    <h1 class="font-bold  text-[40px]  pb-[20px]" style="font-family: Zangezi, Georgia, serif;">Let’s do lunch.<br>And breakfast.</h1>
+                    <p class="text-[20px] ">Heck, snacks too. Add Market items to your basket for feel-good deliciousness, any time of day.</p>
+                    
+                    <button class="rounded-[40px] font-bold bg-[white] min-w-[190.78px]  min-h-[50px] max-h-[35px] border-[1px] border-black mt-[30px] " style="background-color: #ffe849;"> Check it out </button>
+                </div>
+            </div>
+
+      </section>
+
+      <!-- Healthy meal -->
+
+      <section class="max-w-[100%] my-[50px] mt-[100px]">
+        <div class="max-w-[1170px] mx-auto text-center">
+          <h1 class="text-5xl" style="font-weight: 400; font-family: Zangezi, Georgia, serif; font-style: normal;line-height: 1;">Healthy Meal Delivery</h1>          
+        </div>
+        <div class="py-[20px] mx-auto px-[20px]">
+          <div class=" max-w-[700px] mx-auto text-left pt-[20px] text-[20px] "><span  style="color: #ad8026;font-weight: 1000;">></span> Clean, high-quality ingredients and organic fresh produce
+          <div class="pt-[20px]">
+            <hr>
+          </div>
+          </div>
+          <div class=" max-w-[700px] mx-auto text-left pt-[20px] text-[20px] "><span  style="color: #ad8026;font-weight: 1000;">></span> Select meals and ingredients that work for you
+          <div class="pt-[20px]">
+            <hr>
+          </div>
+          </div>
+          <div class=" max-w-[700px] mx-auto text-left pt-[20px] text-[20px] "><span  style="color: #ad8026;font-weight: 1000;">></span> Get everything in a cold-packed home delivery package <div class="pt-[20px]">
+            <hr>
+          </div>
+          </div>
+          <div class=" max-w-[700px] mx-auto text-left pt-[20px] text-[20px] "><span  style="color: #ad8026; font-weight: 1000;">></span> Healthy food at home in minutes
+          <div class="pt-[20px]">
+            <hr>
+          </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Hungry yet div -->
+
+      <section class="">
+        <div class="max-w-[100%] px-[20px]  md:text-white  mx-auto text-center md:min-h-[440px]  bg-cover bg-[url('footer-getstarted.jpg')] " >
+            <div class="md:max-w-[1170px]  py-[50px]  mx-auto  order-1">
+                <div class="  text-center px-[20px] md:bg-[transparent] bg-[white] md:w-[100%] w-[60%] mx-auto">
+                    <h1 class="font-bold  md:text-[60px] md:text-[white] text-[black]  pb-[20px] text-[30px] sm:text-[50px]" style="font-family: Zangezi, Georgia, serif;">Hungry Yet?</h1>
+                    
+                    <button class="rounded-[40px]  bg-[white] min-w-[170.78px]  min-h-[40px]  border-[1px] border-black " style="background-color: #ffe849;"> Build Your Basket </button>
+                    
+                    <p class="text-[20px] pt-[20px] md:text-[white] pb-[20px]">Mouthwatering money-back guarantee</p>
+                
+                  </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Quotes -->
+       <section class="max-w-[100%] py-[50px] tx-[30px]">
+        <div class="max-w-[1280px] py-[10px] px-[10px] mx-auto" >
+          <div class="grid md:grid-cols-2 grid-cols-1 gap-[20px]">
+            <!-- col 1 -->
+            <div>
+              <div class="flex">
+              <span class="text-[44px] text-[#ad8026] pt-[1px]" style="font-family: Zangezi, Georgia, serif; font-weight: 400;font-feature-settings: lnum;">" </span>
+              <p class="text-[23px] pt-[20px] px-[15px]" style="font-family: Inter, Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: 400; font-style: italic;">
+               Everything was amazing. Produce is so fresh. Flavorful dishes without overpowering spice. Easy to understand recipes. Feels like we are eating out every night. 
+              </p>
+              </div>
+              <small class="text-[#767676] ml-[30px] text-[18px]" style="font-weight: 400;">
+                    Corinne M.
+              </small>
+            </div>
+            <!-- col 2 -->
+             <div>
+              <div class="flex">
+              <span class="text-[44px] text-[#ad8026] pt-[1px]" style="font-family: Zangezi, Georgia, serif; font-weight: 400;font-feature-settings: lnum;">" </span>
+              <p class="text-[23px] pt-[20px] px-[15px]" style="font-family: Inter, Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: 400; font-style: italic;">
+               Everything has tasted delicious and was so easy to make. It's such a relief to not have to plan and shop to have healthy and tasty meals.
+              </p>
+              </div>
+              <small class="text-[#767676] ml-[30px] text-[18px]" style="font-weight: 400;">
+                    Brittany H.
+              </small>
+            </div>
+          </div>
+        </div>
+
+       </section>
+
+       <!-- Icons -->
+        <section class="max-w-[100%] py-[50px]">
+          <div class="max-w-[1140px] mx-auto">
+            <div class="flex mr-[auto] ml-[auto] mx-auto " style="flex-wrap: wrap; justify-content: space-between;">
+              <!-- col-1 -->
+              <div class="text-[center]  max-w-[415px] sm:min-h-[337px] min-h-[200px] mx-auto" style="justify-content: space-between; align-items: center;"> 
+                <div>
+                  <div class="mx-auto">
+                    <img class="h-[32px] mx-auto" src="glamour_magazine_logo (1).svg">
+                  </div>
+                  <div class="mt-[20px] text-[20px] text-center max-w-[230px] max-h-[76.5px] mx-auto">
+                    <p>“A major game changer, especially if you’re easing into a healthier lifestyle.”</p>
+                  </div>
+                </div>
+              </div>
+                <!-- col 2 -->
+              <div class="text-[center]  max-w-[415px] min-h-[337px] mx-auto " style="flex-wrap: wrap; justify-content: space-between;" ><div>
+                  <div class="mx-auto">
+                    <img class="h-[32px] mx-auto" src="Insider_mock-e1648867962465.png">
+                  </div>
+                  <div class="mt-[20px] text-[20px] text-center max-w-[230px] max-h-[76.5px] mx-auto">
+                    <p>“Sunbasket impresses from start to finish, from its sourcing of organic produce to its attention to detail when it comes to oft-neglected meal components like flavorful sauces.” </p>
+                  </div>
+                </div>
+              </div>
+              <!-- col-3 -->
+              <div class="text-[center]  max-w-[415px] mx-auto sm:min-h-[337px] min-h-[150px]" style="flex-wrap: wrap; justify-content: space-between;">   <div>
+                  <div class="mx-auto">
+                    <img class="h-[32px] mx-auto" src="healthline.png">
+                  </div>
+                  <div class="mt-[20px] text-[20px] text-center max-w-[230px] max-h-[76.5px] mx-auto">
+                    <p>“Best overall eco-friendly meal delivery”</p>
+                  </div>
+                </div>
+              </div>
+              <!-- col 4 -->
+              <div class="text-[center]  max-w-[415px] mx-auto lg:mt-[0px] mt-[150pxl] min-h-[337px]" style="flex-wrap: wrap; justify-content: space-between;"><div>
+                  <div class="mx-auto  ">
+                    <img class="h-[32px] mx-auto" src="cnet-mock.png">
+                  </div>
+                  <div class="mt-[20px] text-[20px] text-center max-w-[260px] max-h-[76.5px] mx-auto">
+                    <p> “Best healthy meal delivery service 2022. Sunbasket’s healthy meal delivery focuses on high-quality and mostly organic ingredients, meats, fish and produce in easy-to-cook recipes, many of which are designed specifically for various diets and dietary restrictions.”</p>
+                  </div>
+                </div></div>
+            </div>
+            
+
+          </div>
+
+        </section>
+        <hr>
+
+        <!-- Footer -->
+
+        <section class="max-w-[100%] pt-[50px] pb-[10px] px-[20px]">
+          <div class="max-w-[1280px] mx-auto ">
+            <div class="flex gap-[20px] mb-[50px] " style="flex-wrap: wrap; justify-content: space-between;"  >
+              
+              
+              <!-- col 1 -->
+              <div class="ml-[10px] max-h-[198.8] "> 
+                <small class="text-[#767676]  text-[18px]" style="font-weight: 400;">
+                    Meal Kit Delivery
+              </small>
+              <ul>
+                <li class="hover:underline text-[19px]">On the Menu</li>
+                <li class="hover:underline text-[19px]">How It Works</li>
+                <li class="hover:underline text-[19px]">Recycle</li>
+                <li class="hover:underline text-[19px]">Gift Cards</li>
+                <li class="hover:underline text-[19px]">Redeem Gift Cards</li>
+              </ul>
+              </div>
+              <!-- cols 2 -->
+              <div class="ml-[10px] max-h-[198.8] "> 
+                <small class="text-[#767676]  text-[18px]" style="font-weight: 400;">
+                  About Sunbasket
+              </small>
+              <ul>
+                <li class="hover:underline text-[19px]">Values</li>
+                <li class="hover:underline text-[19px]">Farms & Sourcing</li>
+                <li class="hover:underline text-[19px]">Organic Food</li>
+                <li class="hover:underline text-[19px]">Rastelli's - Our Butcher</li>
+                <li class="hover:underline text-[19px]">Accessibility Statement</li>
+              </ul>
+              </div>
+
+              <!-- col 3 -->
+            <div class="ml-[10px] max-h-[198.8]"> 
+                <small class="text-[#767676]  text-[18px]" style="font-weight: 400;">
+                    Contact Us
+              </small>
+              <ul>
+                <li class="hover:underline text-[19px]">Help & Contact</li>
+                <li class="hover:underline text-[19px]">FAQs</li>
+                <li class="hover:underline text-[19px]">Affiliate</li>
+                <li class="hover:underline text-[19px]">Press</li>
+                <li class="hover:underline text-[19px]">Careers</li>
+              </ul>
+              </div>
+              <!-- col 4 -->
+             <div class="ml-[10px] max-h-[198.8] float-left min-w-[33%]"> 
+                <small class="text-[#767676]  text-[18px]" style="font-weight: 400;">
+                    Explore
+              </small>
+              <ul>
+                <li class="hover:underline text-[19px]">Sunbasket Recipes</li>
+                <li class="hover:underline text-[19px]">Tips & Techniques</li>
+              </ul>
+              
+              <!-- col 5 -->
+               
+              <div class=" flex mt-[10px] hidden lg:flex "> 
+                <img class="h-[70px] w-[70px] mt-[14px]" src="abb63543-620b-4faa-a318-30d339202c15@800-150x150.webp" alt="">
+                <div class="pl-[20px] ">
+                  <div class="flex">
+                <small class="text-[#767676]  text-[18px] " style="font-weight: 400;">
+                    From our blog, 
+              </small>
+              <p class="hover:underline my-[4px] ml-[5px]">The Sun Times</p>
+                  </div>
+              <p class="text-[19px]">The Ultimate Healthy Meal Kit for 2025</p>
+              </div>
+            </div>
+             </div>
+            <div class=" flex mt-[10px] lg:hidden max-w-[100%] mr-[20px] "> 
+                <img class="h-[70px] w-[70px] sm:mt-[10px] mt-[0px]" src="abb63543-620b-4faa-a318-30d339202c15@800-150x150.webp" alt="">
+                <div class="pl-[20px] ">
+                  <div class="flex">
+                <small class="text-[#767676]  text-[18px] " style="font-weight: 400;">
+                    From our blog, 
+              </small>
+              <p class="hover:underline my-[4px] ml-[5px]">The Sun Times</p>
+                  </div>
+              <p class="text-[19px]">The Ultimate Healthy Meal Kit for 2025</p>
+              </div>
+            </div>
+
+            
+          </div>
+
+
+          <hr class="text-[#767676]">
+          
+
+          <div class=" max-w-[1290px] text-center pt-[35px] flex " style="flex-wrap: wrap; justify-content: space-between;">
+            <!-- col 1 -->
+            <div class="py-[15px]  mx-auto " style="flex-wrap: wrap; justify-content: space-between;">
+                <small class="text-[#767676]  text-[18px]  " style="font-weight: 400;">
+                    Get healthy recips, tips & more
+              </small>
+              <form class="py-[10px] w-[100%]  mx-auto flex items-center justify-center " action="">
+                <input type="email" class="border-[1px]  min-h-[40px] text-[20px]" placeholder="Email address">
+                <button type="submit" class="  bg-[white] sm:px-[20px] px-[10px] min-h-[40px] text-[18px] border-[1px] border-black " style="background-color: #ffe849;"> Submit </button>
+                    
+              </form>
+            </div>
+            <!-- col 2 -->
+            <div class=" mx-auto py-[15px]" style="flex-wrap: wrap; justify-content: space-between; ">
+              <small class="text-[#767676]   text-[18px] " style="font-weight: 400;">
+                    Get healthy recips, tips & more
+              </small>
+              <div class="flex gap-[10px]   mx-auto py-[10px] items-center ">
+              <img class="w-[130px]" src="app-store-badge.svg " alt="">
+              <img class="w-[130px]" src="google-play.png " alt="">
+              </div>
+            </div>
+            <!-- col 3 -->
+            <div class=" mx-auto py-[10px]" style="flex-wrap: wrap; justify-content: space-between; ">
+              <small class="text-[#767676]   text-[18px] " style="font-weight: 400;">
+                    Follow Us
+              </small>
+              <div class="flex gap-[10px] mt-[10px] w-[100%] mx-auto">
+              <div class="  mx-auto items-center py-[25px] bg-[#ffe849] rounded-[50%]">
+              <i class="fa-brands fa-facebook fa-2xl px-[10px] mx-auto flex items-center justify-center "></i>
+              </div>
+               <div class=" gap-[10px]   mx-auto py-[10px] items-center py-[25px] bg-[#ffe849] rounded-[50%]">
+              <i class="fa-brands fa-facebook fa-2xl px-[10px] mx-auto flex items-center justify-center "></i>
+              </div>
+              <div class=" gap-[10px]   mx-auto py-[10px] items-center py-[25px] bg-[#ffe849] rounded-[50%]">
+              <i class="fa-brands fa-facebook fa-2xl px-[10px] mx-auto flex items-center justify-center "></i>
+              </div>
+              <div class=" gap-[10px]   mx-auto py-[10px] items-center py-[25px] bg-[#ffe849] rounded-[50%]">
+              <i class="fa-brands fa-facebook fa-2xl px-[10px] mx-auto flex items-center justify-center "></i>
+              </div>
+              <div class=" gap-[10px]   mx-auto py-[10px] items-center py-[25px] bg-[#ffe849] rounded-[50%]">
+              <i class="fa-brands fa-facebook fa-2xl px-[10px] mx-auto flex items-center justify-center "></i>
+              </div>
+              </div>
+            </div>
+            
+          </div>
+          <!-- last div -->
+           <div class="mx-auto text-center mt-[20px]">
+            <small class="text-[#767676]   text-[15px] " style="font-weight: 400;">
+                    *Some exclusions may apply. <a class="underline" href="">See Terms</a>
+              </small><br>
+               <small class="text-[#767676]   text-[15px] " style="font-weight: 400;">
+                    © 2025 Sunbasket Version 5.143.0 <a href="" class="hover:underline">| Terms </a>|<a href="" class="hover:underline"> Privacy |</a><a href="" class="hover:underline"> Accessibility |</a><a href="" class="hover:underline"> Security</a>
+              </small>
+              
+           </div>
+
+          </div>
+          
+          
+        </section>
+
+</body>
+</html>
